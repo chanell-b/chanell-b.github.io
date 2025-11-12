@@ -51,7 +51,7 @@ nav {
   content: '';
   position: absolute;
   width: 3px;
-  background-color: #b56576ff;
+  background-color: rgb(205, 104, 64);;
   top: 15px;
   bottom: 10px;
   left: 50%;
@@ -73,7 +73,7 @@ nav {
   width: 15px;
   height: 15px;
   right: -17px;
-  background-color: #eaac8bff;
+  background-color: teal;
   border: 9px solid #355070ff;
   top: 15px;
   border-radius: 50%;
@@ -126,10 +126,11 @@ nav {
 /* The actual content */
 .time-line__content {
   padding: 20px 30px;
-  background-color: #b56576ff;
+  background-color: grey;
   position: relative;
   border-radius: 6px;
   color: white;
+
  }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -163,6 +164,16 @@ nav {
   .time-line__right {
   left: 0%;
   }
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 hr {
