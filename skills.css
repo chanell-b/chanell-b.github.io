@@ -15,6 +15,7 @@ main {
     text-align: center;
     padding: auto;
     flex: auto;
+
 }
 
 footer img {
@@ -78,6 +79,7 @@ nav {
 
 .skills-button-class:hover {
     background-color: gray;
+    animation: explode 0.5s forwards; box-shadow: 0 0 30px rgba(238, 182, 41, 0.822);
 }
 
 hr {
@@ -89,19 +91,47 @@ hr {
 
 h3 {
     color: rgb(205, 104, 64);
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-.rtag {
+li {
+text-decoration: none;
+}
+
+
+.qtag {
  
   margin: auto;
   text-align: center;
   padding: 10px;
-  background-color: grey;
+  background-color: teal;
   border-radius: 5px;
+  text-decoration: none;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 
+}
+
+.qtag:hover {
+
+    animation: explode 0.5s forwards; box-shadow: 0 0 30px rgba(238, 182, 41, 0.822);
+}
+
+.ltag {
+
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(205, 104, 64);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.ltag:hover {
+
+    animation: explode 0.5s forwards; box-shadow: 0 0 30px rgba(238, 182, 41, 0.822);
 }
 
 .atag {
@@ -109,23 +139,82 @@ h3 {
   margin: auto;
   text-align: center;
   padding: 10px;
-  background-color: #2de3dd;
+  background-color: grey;
   border-radius: 5px;
+  text-decoration: none;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.atag:hover {
+
+    animation: explode 0.5s forwards; box-shadow: 0 0 30px rgba(238, 182, 41, 0.822);
+}
+
+.rtag {
+ 
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  background-color: goldenrod;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 
 }
 
-.data-tags {
+.rtag:hover {
 
-    display: flex;
-    
+    animation: explode 0.5s forwards; box-shadow: 0 0 30px rgba(238, 182, 41, 0.822);
 }
 
 .dtag {
 
-    text-decoration: none;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  background-color: teal;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 
 }
 
-li {
-text-decoration: none;
+.dtag:hover {
+
+    animation: explode 0.5s forwards; box-shadow: 0 0 30px rgba(238, 182, 41, 0.822);
 }
+
+.stag {
+
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  background-color: grey;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.stag:hover {
+
+    animation: explode 0.5s forwards; box-shadow: 0 0 30px rgba(238, 182, 41, 0.822);
+}
+
+.ttag {
+
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(194, 105, 70);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.ttag:hover {
+
+    animation: explode 0.5s forwards; box-shadow: 0 0 30px rgba(238, 182, 41, 0.822);
+}
+
+
+
