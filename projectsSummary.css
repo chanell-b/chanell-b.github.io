@@ -8,6 +8,22 @@ header {
     padding: 1%;
 }
 
+/* Page container to align with other pages */
+.page-container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.first-project { margin-bottom: 18px; }
+.accept-criteria { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.accept-criteria .dtag { display: inline-block; padding: 8px 10px; }
+
+/* Responsive base rules */
+img { max-width: 100%; height: auto; display: block; }
+
+nav { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+
 footer img {
     height: 20px;
     width: auto;
@@ -56,9 +72,29 @@ footer img {
 }
 
 footer {
-    
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .button-class { padding: 9px 10px; font-size: 13px; }
+    section { padding: 10px; }
+}
+
+/* Hamburger toggle styles */
+.nav-toggle { display: none; background: transparent; border: none; color: white; font-size: 22px; padding: 6px; cursor: pointer; }
+.nav-links { display: flex; gap: 6px; align-items: center; }
+
+@media screen and (max-width: 600px) {
+    .nav-toggle { display: block; }
+    .nav-links { display: none; flex-direction: column; width: 100%; }
+    nav.open .nav-links, .nav-links.open { display: flex; }
+    nav a.button-class { display: block; width: 100%; box-sizing: border-box; }
+}
+
+@media screen and (max-width: 420px) {
+    .button-class { padding: 7px 8px; font-size: 12px; }
+    section { padding: 8px; }
 }

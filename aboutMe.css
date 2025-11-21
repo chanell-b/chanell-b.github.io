@@ -8,6 +8,11 @@ header {
     padding: 1%;
 }
 
+/* Responsive base rules */
+img { max-width: 100%; height: auto; display: block; }
+
+nav { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+
 footer img {
     height: 20px;
     width: auto;
@@ -59,14 +64,15 @@ nav {
 
 .initial-img {
 
-    height: 250px;
+    max-width: 100%;
+    height: auto;
+    max-height: 320px;
     width: auto;
-    border-radius: 2%;
+    border-radius: 30%;
     float: right;
     margin: 0 0 15px 20px;
     padding: 15px;
     text-align: center;
-    border-radius: 30%;
 
 }
 
@@ -76,9 +82,10 @@ nav {
 
 .last-img {
 
-    height: 250px;
+    max-width: 100%;
+    height: auto;
+    max-height: 320px;
     width: auto;
-    border-radius: 2%;
     padding: 5%;
     float: left;
     margin: 0 0 15px 20px;
@@ -150,4 +157,27 @@ h3 {
     display: inline-block;
     transition: background-color 0.3s ease;
 
+}
+
+/* Small screens adjustments */
+@media screen and (max-width: 600px) {
+    .initial-img, .last-img { float: none; margin: 0 auto 15px; display: block; }
+    .initial-section, .last-section { text-align: center; }
+    .button-class { padding: 10px 12px; font-size: 13px; }
+}
+
+/* Hamburger toggle styles */
+.nav-toggle { display: none; background: transparent; border: none; color: white; font-size: 22px; padding: 6px; cursor: pointer; }
+.nav-links { display: flex; gap: 6px; align-items: center; }
+
+@media screen and (max-width: 600px) {
+    .nav-toggle { display: block; }
+    .nav-links { display: none; flex-direction: column; width: 100%; }
+    nav.open .nav-links, .nav-links.open { display: flex; }
+    nav a.button-class { display: block; width: 100%; box-sizing: border-box; }
+}
+
+@media screen and (max-width: 420px) {
+    .button-class { padding: 7px 8px; font-size: 12px; }
+    .initial-img, .last-img { max-height: 240px; }
 }

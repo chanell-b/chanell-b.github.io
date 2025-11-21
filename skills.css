@@ -46,6 +46,10 @@ footer {
     transition: background-color 0.3s ease;
 }
 
+/* Responsive base rules */
+img { max-width: 100%; height: auto; display: block; }
+nav { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+
 .button-class:hover {
     background-color: rgb(9, 155, 155);
 }
@@ -214,6 +218,30 @@ text-decoration: none;
 .ttag:hover {
 
     animation: explode 0.5s forwards; box-shadow: 0 0 30px rgba(238, 182, 41, 0.822);
+}
+
+/* Small screens: stack large skill buttons and reduce tag padding */
+@media screen and (max-width: 600px) {
+    .skills-button-class { display: block; width: 90%; margin: 12px auto; padding: 14px 18px; font-size: 16px; }
+    .qtag, .ltag, .atag, .rtag, .dtag, .stag, .ttag { display: inline-block; padding: 8px 10px; margin: 6px; font-size: 14px; }
+    .button-class { padding: 9px 10px; font-size: 13px; }
+}
+
+/* Hamburger toggle styles */
+.nav-toggle { display: none; background: transparent; border: none; color: white; font-size: 22px; padding: 6px; cursor: pointer; }
+.nav-links { display: flex; gap: 6px; align-items: center; }
+
+@media screen and (max-width: 600px) {
+    .nav-toggle { display: block; }
+    .nav-links { display: none; flex-direction: column; width: 100%; }
+    nav.open .nav-links, .nav-links.open { display: flex; }
+    nav a.button-class { display: block; width: 100%; box-sizing: border-box; }
+}
+
+@media screen and (max-width: 420px) {
+    .skills-button-class { padding: 12px 14px; font-size: 15px; }
+    .qtag, .ltag, .atag, .rtag, .dtag, .stag, .ttag { padding: 6px 8px; font-size: 13px; }
+    .button-class { padding: 7px 8px; font-size: 12px; }
 }
 
 

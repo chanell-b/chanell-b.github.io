@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="projectsSummary.css">
-    <title>Skills</title>
+    <title>Projects</title>
 </head>
 
 <body>
@@ -13,62 +13,70 @@
         <h1>Projects</h1>
     </header>
     <nav>
-        <a href="index.html" class="button-class">Home</a>
-        <a href="aboutMe.html" class="button-class">About Me</a>
-        <a href="Roadmap.html" class="button-class">Experience</a>
-        <a href="skills.html" class="button-class">Skills</a>
-        <a href="projectsSummary.html" class="button-class">Projects</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">☰</button>
+        <div class="nav-links">
+            <a href="index.html" class="button-class">Home</a>
+            <a href="aboutMe.html" class="button-class">About Me</a>
+            <a href="Roadmap.html" class="button-class">Experience</a>
+            <a href="skills.html" class="button-class">Skills</a>
+            <a href="projectsSummary.html" class="button-class">Projects</a>
+        </div>
     </nav>
     <main>
-        <section class="first-project">
-            <div>
-                <h2>Cognos Upgrade: 11.0.7 to 12.0.4 FP1</h2>
-            </div>
-            <h3>Project Summary:</h3>
-            <p>
-                Led the technical upgrade of the enterprise wide Cognos Analytics Upgrade. Ensuring a seamless
-                transition
-                for over X amount of business users.
+        <div class="page-container">
+            <section class="first-project">
+                <div>
+                    <h2>Cognos Upgrade: 11.0.7 to 12.0.4 FP1</h2>
+                </div>
+                <h3>Project Summary:</h3>
+                <p>
+                    Led the technical upgrade of the enterprise wide Cognos Analytics Upgrade. Ensuring a seamless
+                    transition
+                    for over X amount of business users.
 
-                Modernizing reporting capabilities, enabling advanced BI features such as: dashboard forecasting,
-                enhancing
-                security, and improving overall platform stability.
-            </p>
-            <h4>Acceptance Criteria</h4>
-            <ul class="accept-criteria">
-                <li class="dtag"><span class="wrap">Ensuring zero downtime</span></li>
-                <li class="dtag"><span class="wrap">Preserving the integrity of the library of reports and
-                        dashboards</span></li>
-                <li class="dtag"><span class="wrap">Validating all data is enriched for dashboards with no
-                        discrepancies</span></li>
-                <li class="dtag"><span class="wrap">Data Security - Multi-tenant relationship is still secure</span>
-                </li>
-                <li class="dtag"><span class="wrap">We only change the “look and feel” not the data behind the
-                        scenes</span></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Pax A920 Device Integration</h2>
-            <p>
-                Led the upgrade of IBM Cognos from version 11.0.7 to 12.0.4 FP1, improving reporting capabilities and
-                system performance. Coordinated testing, user training, and documentation to ensure a smooth transition
-                for all stakeholders.
-            </p>
-        </section>
+                    Modernizing reporting capabilities, enabling advanced BI features such as: dashboard forecasting,
+                    enhancing
+                    security, and improving overall platform stability.
+                </p>
+                <h4>Acceptance Criteria</h4>
+                <ul class="accept-criteria">
+                    <li class="dtag"><span class="wrap">Ensuring zero downtime</span></li>
+                    <li class="dtag"><span class="wrap">Preserving the integrity of the library of reports and
+                            dashboards</span></li>
+                    <li class="dtag"><span class="wrap">Validating all data is enriched for dashboards with no
+                            discrepancies</span></li>
+                    <li class="dtag"><span class="wrap">Data Security - Multi-tenant relationship is still secure</span>
+                    </li>
+                    <li class="dtag"><span class="wrap">We only change the “look and feel” not the data behind the
+                            scenes</span></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Pax A920 Device Integration</h2>
+                <p>
+                    Led the upgrade of IBM Cognos from version 11.0.7 to 12.0.4 FP1, improving reporting capabilities
+                    and
+                    system performance. Coordinated testing, user training, and documentation to ensure a smooth
+                    transition
+                    for all stakeholders.
+                </p>
+            </section>
+        </div>
     </main>
     <hr>
     <footer>
         <p>Please contact me:</p>
-        <img src="/in-logo/LI-In-Bug.png" alt="LinkedIn Icon">
+        <img src="in-logo/LI-In-Bug.png" alt="LinkedIn Icon">
         <a href="https://www.linkedin.com/in/chanellb">LinkedIn</a>
         <br>
-        <img src="/GitHubLogo.png" alt="GitHub Icon">
+        <img src="GitHubLogo.png" alt="GitHub Icon">
         <a href="https://github.com/chanell-b">GitHub</a>
         <br>
-        <email><a href="chanell@gmail.com">Chanell@gmail.com</a></email>
+        <p><a href="mailto:chanell@gmail.com">Chanell@gmail.com</a></p>
         <br>
         <p>&copy; 2025 Chanell Brown</p>
     </footer>
+    <script src="nav.js" defer></script>
 </body>
 
 </html>
